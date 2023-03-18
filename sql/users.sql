@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS `users` (
+   id INT(8) AUTO_INCREMENT,
+   active BOOLEAN DEFAULT 1,
+   username VARCHAR(40) UNIQUE NOT NULL,
+   fullname VARCHAR(60),
+   email VARCHAR(254) UNIQUE NOT NULL,
+   bio TEXT,
+   bod DATE,
+   location TEXT,
+   password_hash TEXT NOT NULL,
+   email_verified BOOLEAN DEFAULT 0,
+   image_url TEXT,
+   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+   updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+
+   PRIMARY KEY(id)
+);

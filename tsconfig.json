@@ -1,0 +1,19 @@
+{
+   "compilerOptions": {
+      "outDir": "lib",
+      "allowJs": false,
+      "checkJs": false,
+      "target": "ES6",
+      "alwaysStrict": false,
+      "module": "CommonJS",
+      "resolveJsonModule": true,
+      "moduleResolution": "node",
+      "removeComments": false,
+      "baseUrl": ".",
+      "paths": {
+         "*": ["node_modules/*", "src/types/*"]
+      }
+   },
+   "include": ["src/**/*"],
+   "exclude": ["node_modules/**/*", "tests/**/*"]
+}
